@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #150537;
+  color: #4f3ab9;
+}
+
+/* Logo.css */
+.logo-container {
+  display: flex;
+  align-items:flex-end;
+}
+
+.logo-image {
+  width: auto; 
+  height: 25px; 
+  margin-right: 10px; 
+}
+
+.year h5 {
+  color: rgb(210, 209, 209); 
+  font-size: 8px;
+  margin: 0;
+}
+
+
+/* Add more styles as needed */

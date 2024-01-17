@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div style={{ width: '200px', background: '#f0f0f0', padding: '20px' }}>
-      <h2>CUENTA</h2>
-      <h5>@2024</h5>
+
       <ul>
         <li>
           <Link to="/">Dashboard</Link>

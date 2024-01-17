@@ -5,10 +5,14 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Calendar from './components/Calendar';
 import Performance from './components/Performance';
+import './App.css';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <Router>
+      <Navbar />
+        <div style={{ padding: '20px' }}></div>
       <div style={{ display: 'flex' }}>
         <Sidebar />
         <div style={{ marginLeft: '200px', padding: '20px', width: '100%' }}>
