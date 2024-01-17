@@ -22,7 +22,7 @@ const App = () => {
   return (
     <Router>
       <Navbar loggedIn={loggedIn} onLogout={handleLogout} />
-      <div style={{ padding: '20px' }}></div>
+      <div style={{ padding: '0px' }}></div>
       <div style={{ display: 'flex' }}>
         {loggedIn && <Sidebar />} {/* Show Sidebar only when logged in */}
         <div style={{ marginLeft: '200px', padding: '20px', width: '100%' }}>
