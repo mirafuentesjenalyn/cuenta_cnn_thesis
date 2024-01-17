@@ -48,4 +48,5 @@ const App = () => {
   );
 };
 
+//tangina nyong lahat
 export default App;
