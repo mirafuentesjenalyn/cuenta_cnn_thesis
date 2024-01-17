@@ -12,5 +12,5 @@ const Logo = () => {
     </div>
   );
 };
-
+// wala cuenta si badid
 export default Logo;
