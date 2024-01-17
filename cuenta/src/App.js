@@ -27,5 +27,5 @@ const App = () => {
     </Router>
   );
 };
-
+//tangina mo badid
 export default App;
