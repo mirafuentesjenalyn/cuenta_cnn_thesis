@@ -1,8 +1,6 @@
-// Login.js
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import '../views/Login.css';
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -27,7 +25,7 @@ const Login = ({ onLogin }) => {
     <div className="container">
       <section id="content">
         <form onSubmit={handleSubmit}>
-          <h1>Login Form</h1>
+          <h1>Login</h1>
           <div>
             <input
               type="text"
