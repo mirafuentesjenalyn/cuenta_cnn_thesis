@@ -68,3 +68,8 @@
   .video-container:hover .video-overlay {
     opacity: 0.7; /* Adjust the overlay opacity on hover */
   }
+
+.full-screen {
+  width: 100% !important;
+  height: 100% !important;
+}
