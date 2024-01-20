@@ -1,0 +1,10 @@
+.performance-container {
+    width: calc(100% - 100px);
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+.performance-text {
+    margin-top: 2px;
+    margin-bottom: 16px;
+  }
