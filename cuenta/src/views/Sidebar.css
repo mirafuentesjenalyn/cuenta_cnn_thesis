@@ -1,0 +1,90 @@
+/* views/Sidebar.css */
+
+/* Style for the entire sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  background-image: url('../../public/logo/blue.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-y: auto; /* Allow vertical scrolling if the content is too long */
+}
+
+/* Style for the "Bus Passenger Counting" section */
+.bus-counting {
+  margin-top: 20px;
+  margin-bottom: 40px; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bus-counting p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #010B19;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* Style for the list items (links) inside the sidebar */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for each list item (link) */
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  /* Style for the icons */
+  .sidebar i {
+    font-size: 25px; /* Adjust the icon size as needed */
+    margin-left: 30px;
+    margin-top: 3px;
+  }
+  
+  /* Style for the links inside the list items */
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #010b19;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 545;
+  }
+  
+  /* Links on mouse-over */
+.sidebar li:hover:not(.active),
+.sidebar a:hover:not(.active) {
+  background-color: #3B5F9B;
+  color: #deecff;
+}
+
+/* Style for the icons and links inside the list items */
+.sidebar li:hover:not(.active) i,
+.sidebar li:hover:not(.active) a {
+  background-color: #3B5F9B;
+  color: #deecff;
+}
+
+
+  /* Add specific styles for each link */
+  /* .dashboard-link {
+  }
+  
+  .calendar-link {
+  }
+  
+  .performance-link {
+  } */
+    

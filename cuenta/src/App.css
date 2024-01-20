@@ -37,13 +37,31 @@
   }
 }
 
+/* Add padding to the body to prevent content from being hidden behind the fixed navbar */
+body {
+  padding-top: 60px; /* Adjust the value based on your navbar height */
+  max-width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: auto;
+  background-color: #261F4F;
+  background-image: url('../public/logo/rightblue.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #033c4c;
+  padding: 10px;
+  background-color: #0a2448;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it appears above other elements */
+  overflow: hidden;
 }
 
 .logo-container {
@@ -55,20 +73,24 @@
   width: auto; 
   height: 40px; 
   margin-right: 10px; 
-  margin-left: -15px;
+  margin-left: 0px;
 }
 
 .year h5 {
   color: rgb(220, 220, 220); 
   font-size: 10px;
   margin-right: 50px;
+  margin-bottom: 5px;
 }
 
 .date-time {
   color: rgb(255, 255, 255); 
   display:inline-block;
   flex-direction:initial;
-  align-items: flex-end; /* Align the date and time to the right */
+  align-items: center;
+  margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 

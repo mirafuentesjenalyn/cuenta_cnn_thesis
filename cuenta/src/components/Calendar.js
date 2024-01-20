@@ -1,22 +1,33 @@
-// components/Calendar.js
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import '../views/calendar.css';
 
 const CalendarComponent = () => {
   const [date, setDate] = useState(new Date());
+  const [isCircleActive, setIsCircleActive] = useState(false);
 
   const handleDateChange = (newDate) => {
     setDate(newDate);
+    setIsCircleActive(false); // Reset to square when changing the date
+  };
+
+  const handleTileClick = () => {
+    setIsCircleActive(!isCircleActive);
   };
 
   return (
-    <div>
-      <h1>Calendar</h1>
-      <p>Welcome to the Calendar!</p>
+    <div className="calendar-container">
+      <h1 className="calendar-heading">Calendar</h1>
+      <p className="calendar-text">Welcome to the Calendar!</p>
 
-      <div style={{ maxWidth: '300px' }}>
-        <Calendar onChange={handleDateChange} value={date} />
+      <div>
+        <Calendar
+          className={`custom-calendar ${isCircleActive ? 'react-calendar__tile--circle' : ''}`}
+          onChange={handleDateChange}
+          value={date}
+          onClickDay={handleTileClick}
+        />
       </div>
     </div>
   );

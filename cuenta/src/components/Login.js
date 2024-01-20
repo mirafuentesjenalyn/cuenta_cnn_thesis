@@ -5,27 +5,32 @@ import '../views/Login.css';
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [loginError, setLoginError] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check for hardcoded username and password
     if (username === 'admin' && password === 'admin') {
-      // Authentication successful, call the onLogin callback and redirect to the dashboard
       onLogin();
       navigate('/');
     } else {
-      // Authentication failed
-      console.log('Login failed');
+      setLoginError(true);
     }
   };
 
   return (
-    <div className="container">
-      <section id="content">
+    <div className="login-container">
+      <section className="login-content" id="content">
         <form onSubmit={handleSubmit}>
-          <h1>Login</h1>
+          <div className="logo-container">
+            <img src="/logo/logo_dark.png" alt="Icon" className="icon-image" />
+              <h1>Login to Cuenta</h1>
+          </div>
+
+          {loginError && <p className="login-error">Login failed. Please check your credentials.</p>}
+          
           <div>
             <input
               type="text"
@@ -38,13 +43,22 @@ const Login = ({ onLogin }) => {
           </div>
           <div>
             <input
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               placeholder="Password"
               required=""
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+          </div>
+          <div>
+            <label>
+              <input
+                type="checkbox"
+                onChange={() => setShowPassword(!showPassword)}
+              />{' '}
+              Show Password
+            </label>
           </div>
           <div>
             <input type="submit" value="Log in" />

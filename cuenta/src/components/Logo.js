@@ -7,7 +7,7 @@ const Logo = () => {
     <div className="logo-container">
       <img src="/logo/name_white.png" alt="Logo" className="logo-image" />
       <div className="year">
-        <h5>©2024 Abrera et. al.</h5>
+        <h5>© 2024 Abrera et. al.</h5>
       </div>
     </div>
   );

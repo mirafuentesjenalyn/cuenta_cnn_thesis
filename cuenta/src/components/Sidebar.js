@@ -1,21 +1,28 @@
 // components/Sidebar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaHome, FaCalendar, FaChartBar } from 'react-icons/fa';
+import '../views/Sidebar.css';
 
 const Sidebar = () => {
   return (
-    <div style={{ width: '200px', height: '100vh', background: '#f0f0f0', padding: '20px' }}>
+    <div className="sidebar">
+      <div className="bus-counting">
+        <p>Real-time Bus Passenger Counting System</p>
+      </div>
       <ul>
-        <li>
+        <li className="dashboard-link">
+          <i className="icon"><FaHome /></i>
           <Link to="/">Dashboard</Link>
         </li>
-        <li>
+        <li className="calendar-link">
+          <i className="icon"><FaCalendar /></i>
           <Link to="/calendar">Calendar</Link>
         </li>
-        <li>
+        <li className="performance-link">
+          <i className="icon"><FaChartBar /></i>
           <Link to="/performance">Performance</Link>
         </li>
-        {/* Add more links as needed */}
       </ul>
     </div>
   );
