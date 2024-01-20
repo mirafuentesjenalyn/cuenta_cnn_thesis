@@ -102,7 +102,8 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Welcome to Cuenta Dashboard</h1>
+      <h1>Dashboard</h1>
+      <p className="dashboard-text">Welcome to the Dashboard!</p>
       <div className="video-grid">
         {[0, 1].map((row) => (
           <div key={row} className="video-row">

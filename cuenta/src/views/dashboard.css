@@ -4,13 +4,14 @@
     grid-template-rows: auto 1fr; /* First row for the title, second row for the grid */
     justify-content: center;
     align-items: center;
-    gap: 16px;
     height: 100vh;
+    width: calc(100% - 100px);
+    margin-top: -20px;
+    margin-left: 100px;
   }
   
-  .title {
-    text-align: center;
-    font-size: 24px;
+  .dashboard-text {
+    margin-top: 2px;
     margin-bottom: 16px;
   }
   
