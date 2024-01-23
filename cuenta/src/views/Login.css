@@ -1,12 +1,11 @@
 /* Whole */
 .login-container { 
-  width: 100%;
-  margin-top: 125px;
-  margin-left: -220px;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  margin-top: 125px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* For login word */
