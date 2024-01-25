@@ -1,71 +1,43 @@
-/* src/views/dashboard.css */
 .dashboard-container {
-    width: calc(100% - 100px);
-    margin-top: -20px;
-    margin-left: 100px;
-  }
-  
-  .dashboard-text {
-    margin-top: 2px;
-    margin-bottom: 16px;
-  }
-  
-  .video-grid {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  
-  .video-container {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
-  }
-  
-  .video-element {
-    width: 100%;
-    height: 50%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Add smooth transition for zoom effect */
-  }
-  
-  .video-element.active {
-    transform: scale(1.5); /* Zoom-in effect for active video, adjust the scale as needed */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
-    transform: translate(-50%, -50%) scale(1.5); /* Center the zoomed-in video */
-    z-index: 1; /* Bring the zoomed-in video to the front */
-  }
-  
-  @media (max-width: 768px) {
-    .video-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-    }
-  }
-  .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black; /* Set the overlay color */
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Add smooth transition for overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .video-container:hover .video-overlay {
-    opacity: 0.7; /* Adjust the overlay opacity on hover */
-  }
+  width: calc(100% - 100px);
+  margin-top: -10px;
+  margin-left: 100px;
+  position: fixed;
+}
 
-.full-screen {
-  width: 100% !important;
-  height: 100% !important;
+/* For the home/dashboard */
+.home-click,
+.dashboard-click {
+  color: black;
+  font-size: 15px;
+  margin-top: 5px;
+  position: fixed;
+  text-decoration: none;
+}
+
+.home-click:active,
+.dashboard-click:active {
+  color: red;
+}
+
+.dashboard-click {
+  margin-left: 69px;
+}
+
+.slash {
+  margin-top: -11px;
+  margin-left: 50px;
+  font-size: 10px;
+  position: fixed;
+}
+
+.camera-container {
+  margin-top: 60px;
+  position: fixed;
+}
+
+video {
+  width: 100%; 
+  height: 100%; 
+  max-width: 100%; 
 }

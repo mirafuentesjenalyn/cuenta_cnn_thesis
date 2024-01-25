@@ -1,10 +1,33 @@
 .performance-container {
     width: calc(100% - 100px);
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: 100px;
-}
-
-.performance-text {
-    margin-top: 2px;
-    margin-bottom: 16px;
+    position: fixed;
   }
+  
+  .home-click,
+  .performance-click {
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+    position: fixed;
+    text-decoration: none;
+  }
+  
+  .home-click:active,
+  .performance-click:active {
+    color: red; 
+  }
+  
+  .performance-click {
+    margin-left: 69px;
+  }
+  
+  .slash {
+    margin-top: -11px;
+    margin-left: 50px;
+    font-size: 10px;
+    position: fixed;
+  }
+
+  

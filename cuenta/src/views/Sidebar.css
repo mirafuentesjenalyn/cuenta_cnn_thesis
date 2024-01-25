@@ -1,8 +1,6 @@
-/* views/Sidebar.css */
-
-/* Style for the entire sidebar */
 .sidebar {
   position: fixed;
+  top: 0;
   left: 0;
   margin: 0;
   padding: 0;
@@ -13,20 +11,19 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  overflow-y: auto; /* Allow vertical scrolling if the content is too long */
 }
 
 /* Style for the "Bus Passenger Counting" section */
 .bus-counting {
-  margin-top: 20px;
-  margin-bottom: 40px; 
+  margin-top: 70px;
+  margin-bottom: 30px; 
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .bus-counting p {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #010B19;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,7 +45,7 @@
 
   /* Style for the icons */
   .sidebar i {
-    font-size: 25px; /* Adjust the icon size as needed */
+    font-size: 20px; /* Adjust the icon size as needed */
     margin-left: 30px;
     margin-top: 3px;
   }
@@ -58,7 +55,7 @@
     display: block;
     text-decoration: none;
     color: #010b19;
-    margin-left: 15px;
+    margin-left: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 545;
   }

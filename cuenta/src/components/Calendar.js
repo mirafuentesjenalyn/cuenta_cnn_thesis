@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import '../views/calendar.css';
@@ -18,8 +19,15 @@ const CalendarComponent = () => {
 
   return (
     <div className="calendar-container">
-      <h1 className="calendar-heading">Calendar</h1>
-      <p className="calendar-text">Welcome to the Calendar!</p>
+        <Link to="/" className="home-click">
+        Home
+      </Link>
+      <Link to="/calendar" className="calendar-click">
+         Calendar
+      </Link>
+      <div className='slash'>
+      <h1>/</h1>
+      </div>
 
       <div>
         <Calendar

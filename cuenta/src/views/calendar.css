@@ -3,14 +3,36 @@
 /* Style for the Calendar component container */
 .calendar-container {
     width: calc(100% - 100px);
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: 100px;
+    position: fixed;
 }
 
-.calendar-text {
-    margin-top: 2px;
-    margin-bottom: 16px;
-  }
+ /* For the home/calendar */
+ .home-click,
+ .calendar-click {
+   color: black;
+   font-size: 15px;
+   margin-top: 5px;
+   position: fixed;
+   text-decoration: none;
+ }
+ 
+ .home-click:active,
+ .calendar-click:active {
+   color: red; 
+ }
+ 
+ .calendar-click {
+   margin-left: 69px;
+ }
+ 
+ .slash {
+   margin-top: -11px;
+   margin-left: 50px;
+   font-size: 10px;
+   position: fixed;
+ }
 
 /* Style for the custom calendar */
 .custom-calendar {
@@ -20,7 +42,7 @@
     border: 2px solid #0A2448;
     border-radius: 5px;
     padding: 10px;
-    margin-top: 5px;    
+    margin-top: 60px;    
     font-family: 'Poppins', sans-serif;
 }
 

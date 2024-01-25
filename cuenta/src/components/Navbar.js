@@ -33,9 +33,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className='logo-container'>
-      <Link to="/">
         <Logo />
-      </Link>
       <div className='date-time'>
         <strong>{formattedDate}</strong> | <span>{formattedTime}</span>
       </div>
