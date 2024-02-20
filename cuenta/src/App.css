@@ -37,20 +37,9 @@
   }
 }
 
-/* Add padding to the body to prevent content from being hidden behind the fixed navbar */
 body {
-  padding-top: 60px; /* Adjust the value based on your navbar height */
-  max-width: 100%;
-  overflow-x: auto; /* Allow horizontal scrolling */
-  overflow-y: auto;
-  background-image: url('../public/logo/rightblue.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
+  background-color: rgb(255, 255, 255);
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;

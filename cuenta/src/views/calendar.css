@@ -3,8 +3,8 @@
 /* Style for the Calendar component container */
 .calendar-container {
     width: calc(100% - 100px);
-    margin-top: -5px;
-    margin-left: 100px;
+    margin-top: 40px;
+    margin-left: 90px;
     position: fixed;
 }
 
@@ -20,7 +20,7 @@
  
  .home-click:active,
  .calendar-click:active {
-   color: red; 
+   color: #417fd5; 
  }
  
  .calendar-click {
